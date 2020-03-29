@@ -11,6 +11,7 @@ function App() {
     <div className="App">
       <Curtain />
       <Header />
+      <Main />
      
     </div>
   );
