@@ -17,8 +17,7 @@ const grid = ['1','2','3','4','5']
   <h1 className="topTex2">WHY THE LAWS OF PHYSICS ARE INEVITABLE</h1>
   <button className="topB"type="button">READ NOW</button> 
   </div>
-
-// main function to export 
+ 
 // main function to export 
 function Main() {
  
@@ -29,6 +28,12 @@ function Main() {
           // maping through the different areas
         grid.map(section => {
 
+          if(section === '2'){
+            return <div className={`grid${section}`}>
+              <GridTwoSection />
+            </div>
+          
+          }
     
           return <div className={`grid${section}`}>{section}</div>
 
