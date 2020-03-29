@@ -17,7 +17,7 @@ const grid = ['1','2','3','4','5']
   <h1 className="topTex2">WHY THE LAWS OF PHYSICS ARE INEVITABLE</h1>
   <button className="topB"type="button">READ NOW</button> 
   </div>
- 
+
 // main function to export 
 function Main() {
  
@@ -28,13 +28,37 @@ function Main() {
           // maping through the different areas
         grid.map(section => {
 
+          if(section === '1'){
+            return <div className={`grid${section}`}>
+             {g1s}
+            </div>
+          }
+
           if(section === '2'){
             return <div className={`grid${section}`}>
               <GridTwoSection />
             </div>
           
           }
-    
+          if(section === '3'){
+            return  <div className={`grid${section}`}>
+                 <SmallBox data={smllBoxData[0]}  />
+              </div>
+            
+          }
+         if(section === '4'){
+          return <div className={`grid${section}`}>
+               <SmallBox data ={smllBoxData[1]} />
+            </div>
+         
+         }
+         if(section === '5'){
+          return <div className={`grid${section}`}>
+            <SmallBox data ={smllBoxData[2]} />
+          </div>
+         
+        }
+         
           return <div className={`grid${section}`}>{section}</div>
 
         })
@@ -42,59 +66,64 @@ function Main() {
       </div>
     );
   }
+ 
 
-  // putting content into arr[obj]
+// putting content into arr[obj]
 const asideData = [
-    {
-      heading: 'ISSUE 079',
-      subheading: 'CATALYSTS',
-      paragraph: 'What generate a new theroy in science? ...'
-    },
-    {
-      heading: 'CHAPTER ONE',
-      subheading: 'Art',
-      paragraph: ''
-    },
-    {
-      heading: 'CHAPTER TWO',
-      subheading: 'Mind',
-      paragraph: 'Coming December 12'
-    },
-    {
-      heading: 'CHAPTER THREE',
-      subheading: 'Energy',
-      paragraph: 'Coming December 19'
-    },
-    {
-      heading: 'CHAPTER FOUR',
-      subheading: 'Stars',
-      paragraph: 'Coming December 26'
-    }
-  ]
-  
-  const GridTwoSection = () => {
-    return (
-      <div className="grid2Con">
-        {
-          asideData.map(data =>{
-            return (
-              <div className="grid2Smallbox">
-                <div className="sec2H">{data.heading}</div>
-                <div className="sec2Sub">{data.subheading}</div>
-                <div className="sec2Par">{data.paragraph}</div>
-                
-              </div>
-  
-  
-            )
-          })
-        }
-      </div>
-  
-    );
+  {
+    heading: 'ISSUE 079',
+    subheading: 'CATALYSTS',
+    paragraph: 'What generate a new theroy in science? ...'
+  },
+  {
+    heading: 'CHAPTER ONE',
+    subheading: 'Art',
+    paragraph: ''
+  },
+  {
+    heading: 'CHAPTER TWO',
+    subheading: 'Mind',
+    paragraph: 'Coming December 12'
+  },
+  {
+    heading: 'CHAPTER THREE',
+    subheading: 'Energy',
+    paragraph: 'Coming December 19'
+  },
+  {
+    heading: 'CHAPTER FOUR',
+    subheading: 'Stars',
+    paragraph: 'Coming December 26'
   }
+]
 
-  / same for the second boxes 
+
+
+
+const GridTwoSection = () => {
+  return (
+    <div className="grid2Con">
+      {
+        asideData.map(data =>{
+          return (
+            <div className="grid2Smallbox">
+              <div className="sec2H">{data.heading}</div>
+              <div className="sec2Sub">{data.subheading}</div>
+              <div className="sec2Par">{data.paragraph}</div>
+              
+            </div>
+
+
+          )
+        })
+      }
+    </div>
+
+  );
+}
+  
+
+// same for the second boxes 
 
 const smllBoxData =[
   {
@@ -130,7 +159,10 @@ const SmallBox = (props) => {
 );
 }
 
- 
+
+  
+  
 
 
 export default Main;
+
