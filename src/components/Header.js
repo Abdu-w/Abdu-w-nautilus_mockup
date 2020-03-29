@@ -34,7 +34,13 @@ class Header extends Component {
             <ul className="nav">
                 {   
             //mapping through the array and passing in name/content
-                    
+                    listNames.map(name => {
+                        if(name === 'Nautilus') 
+                            return <li className="nav1">{name}</li>
+                        if(name === 'SUBSCRIBE') 
+                            return <li> <button className="navb" type="button">{name}</button> </li>
+                        return <LinkTag tagName={name}/>
+                    })
                 }
             </ul>
         ) 
