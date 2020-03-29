@@ -44,6 +44,8 @@
 
 
 }
+
+
 .nav{
   display: flex;
   justify-content: center;
@@ -204,5 +206,51 @@ margin: 0em;
   font-weight: 600;
 }
 
+/* ------------------------g3 */
+.smbox{
+  display: flex;
+  float: left;
+  height: 120px;
+  width: 120px;
+  padding-right: 25px;
+  border:solid black;
+  flex-direction: column;
+    justify-content: flex-start;
+
+ 
+}
+.smboxR{
+  display: flex;
+  float: right;
+  height: 120px;
+  width: 120px;
+  padding-right: 25px;
+  border:solid black;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+}
 
 
+.smb1{
+ text-align: left;
+ margin-top: 5px;
+ margin-left: 5px;
+ font-size: 11px;
+ font-weight: bolder;
+}
+.smb2{
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 5px;
+  font-size: 12px;
+  color: rgb(92, 87, 87);
+}
+.smb3{
+  text-align: left;
+  margin-top: 35px;
+  margin-left: 5px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 10px;
+  
+}
