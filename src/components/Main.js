@@ -67,6 +67,28 @@ const asideData = [
     }
   ]
   
+  const GridTwoSection = () => {
+    return (
+      <div className="grid2Con">
+        {
+          asideData.map(data =>{
+            return (
+              <div className="grid2Smallbox">
+                <div className="sec2H">{data.heading}</div>
+                <div className="sec2Sub">{data.subheading}</div>
+                <div className="sec2Par">{data.paragraph}</div>
+                
+              </div>
+  
+  
+            )
+          })
+        }
+      </div>
+  
+    );
+  }
+    
  
 
 
