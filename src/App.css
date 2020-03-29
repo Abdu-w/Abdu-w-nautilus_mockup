@@ -95,4 +95,114 @@ margin: 0em;
 
 
 
+/* ---------------------------------g1 */
+.topText1{
+  margin: 0em;
+  font-size: 15px;
+
+}
+
+.topTex2{
+  margin: 0em;
+  font-size: 60px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 50;
+  color:rgb(255, 168, 6);
+}
+.topB{
+  border:solid black ;
+  padding: 10px 25px;
+  text-align: center;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 14px;
+  margin: 0em;
+}
+
+.gridContainer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.grid1{
+  grid-column: 1 / 4;
+  grid-row: 1;
+  border: solid black;
+  padding: 100px;
+}
+
+.grid2{
+  grid-column: 1;
+  grid-row: 2 / 8;
+  border: solid black;
+  padding-right: 15px;
+  background-color:#F5F3F3;
+}
+
+.grid3{
+  grid-column: 2/4;
+  grid-row: 2 / 5;
+  border: solid black;
+}
+
+.grid4{
+  grid-column: 2/2;
+  grid-row: 5 / 8;
+  border: solid black;
+}
+
+.grid5{
+  grid-column: 3/3;
+  grid-row: 5 / 8;
+  border: solid black;
+}
+
+
+/* ----------------------g2 */
+.grid2Con{
+  display:flex;
+  flex-direction: column;
+  margin-left: 300px;
+  height:500px;
+  inline-size: 200px;
+  padding-right: 10px;
+  
+ 
+  
+}
+.grid2Smallbox{
+  /* border: solid rgb(190, 117, 145); */
+  border-bottom:solid rgb(194, 187, 187);
+  padding-right: 25px;
+
+}
+.sec2H{
+  text-align: left;
+  padding-right: 10px;
+  margin-left: 5px;
+  margin-top: 5px;
+  font-weight: bolder;
+  font-size: 10px;
+}
+.sec2Sub{
+  text-align: left;
+  padding-right: 10px;
+  margin-left: 5px;
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 12px;
+}
+.sec2Par{
+  text-align: left;
+  padding-right: 10px;
+  color: rgb(255, 208, 0);
+  font-style: italic;
+  font-size: 12px;
+  margin-left: 5px;
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+
 
