@@ -12,20 +12,6 @@ const listNames = [
     'SUBSCRIBE'
 ]
 
-import React, { Component } from 'react';
-//setting navbar contents into a aray 
-const listNames = [
-    'Nautilus',
-    'ISSUES',
-    'TOPICS',
-    'BLOG',
-    'NEWSLETTER',
-    'FACEBOOK',
-    'TWITTER',
-    'LOGIN',
-    'SUBSCRIBE'
-]
-
 
 
 class Header extends Component {
@@ -47,6 +33,13 @@ class Header extends Component {
     }
 }
 // links reapeat so i can make another component 
+class LinkTag extends Component {
+    render() {
+        return (
+            <li className="navl"><a href="#">{this.props.tagName}</a></li>
+        )   
+    }
+}
 
 
 
@@ -55,5 +48,3 @@ class Header extends Component {
 export default Header;
 
 
-
-export default Header;
