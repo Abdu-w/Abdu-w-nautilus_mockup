@@ -37,6 +37,36 @@ function Main() {
       </div>
     );
   }
+
+  // putting content into arr[obj]
+const asideData = [
+    {
+      heading: 'ISSUE 079',
+      subheading: 'CATALYSTS',
+      paragraph: 'What generate a new theroy in science? ...'
+    },
+    {
+      heading: 'CHAPTER ONE',
+      subheading: 'Art',
+      paragraph: ''
+    },
+    {
+      heading: 'CHAPTER TWO',
+      subheading: 'Mind',
+      paragraph: 'Coming December 12'
+    },
+    {
+      heading: 'CHAPTER THREE',
+      subheading: 'Energy',
+      paragraph: 'Coming December 19'
+    },
+    {
+      heading: 'CHAPTER FOUR',
+      subheading: 'Stars',
+      paragraph: 'Coming December 26'
+    }
+  ]
+  
  
 
 
