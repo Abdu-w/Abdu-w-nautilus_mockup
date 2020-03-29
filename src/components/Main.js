@@ -25,7 +25,15 @@ function Main() {
     return (
       // grid container 
       <div className="gridContainer">
-          <h1>{g1s}</h1>
+        {
+          // maping through the different areas
+        grid.map(section => {
+
+    
+          return <div className={`grid${section}`}>{section}</div>
+
+        })
+        }
       </div>
     );
   }
