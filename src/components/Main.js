@@ -93,7 +93,43 @@ const asideData = [
   
     );
   }
-    
+
+  / same for the second boxes 
+
+const smllBoxData =[
+  {
+    heading:'ARTIFICIAL  INTELLIGENCE',
+    title:'Best Screen Play Goes to the Algorithm',
+    author:'By Author I. Miller'
+  },
+
+  {
+    heading:'MUSIC',
+    title:'How I taught My Computer to Write Its Own Music',
+    author:'By Jhon Suplo'
+  },
+  {
+    heading:'ART',
+    title:"Picasso's Got Nothing On AI Artists",
+    author:'By Kevin Burger'
+  }
+  
+]
+
+
+const SmallBox = (props) => {
+  return (
+    <div className="smbox" >
+     <div>
+      <div className="smb1">{props.data.heading}</div>
+      <div className="smb2">{props.data.title}</div>
+      <div className="smb3">{props.data.author}</div> 
+      </div>
+
+  </div>
+);
+}
+
  
 
 
