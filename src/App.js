@@ -9,6 +9,7 @@ import Curtain from './components/Curtain'
 function App() {
   return (
     <div className="App">
+      <Curtain />
      
     </div>
   );
